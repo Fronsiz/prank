@@ -36,7 +36,7 @@
 <body>
 
 <div class="square-wrap">
-  <img src="image.jpg" draggable="false">
+  <img id="btn" src="image.jpg" draggable="false">
 </div>
 
 <audio id="audio" src="sound.mp3" preload="auto" loop></audio>
@@ -57,7 +57,7 @@ function start() {
   }
 }
 
-document.addEventListener("pointerdown", start, { passive: true });
+document.getElementById("btn").addEventListener("pointerdown", start, { passive: true });
 </script>
 
 </body>
